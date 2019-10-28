@@ -1,4 +1,4 @@
 #!/bin/bash
 npm ci
-ng build --prod 
-ngh --dir=dist
+ng build --prod
+ngh --branch=master --dir=dist
