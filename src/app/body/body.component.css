@@ -21,7 +21,9 @@
 /* Desktop screens */
 .me-img {
     height: 550px;
+    min-height: 550px; /* Avoid lazy loading ugliness */
     width: 534px;
+    min-width: 550px; /* Avoid lazy loading ugliness */
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
