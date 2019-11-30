@@ -18,6 +18,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.me-img {
+    border-radius: 5%;
+}
+
 /* Desktop screens */
 @media (min-width: 1200px){
     .me-img {
@@ -31,7 +35,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .me-img {
         height: 565px;
-        width: 500px
+        width: 500px;
     }
 }
 
