@@ -10,7 +10,7 @@ class Hero extends Component {
       <div className="container">
         <div className="card-body main-card">
           <div id="content-card" className="card flex-md-row">
-            <img className="me-img card-body md-4" src={MyFace} align="left" />
+            <img alt="Scott Murray's face" className="me-img card-body md-4" src={MyFace} align="left" />
             <div className="card-body d-flex flex-column">
               <h1>Scott Murray</h1>
               <h5 className="text-muted">Software Engineer at Zip</h5>
@@ -18,10 +18,9 @@ class Hero extends Component {
                 I'm a caffiene addict with far too many Raspberry PIs to be
                 considered sane. When I'm not being a psychotic programmer or a
                 borderline average musician, you can usually find me hanging
-                around Auckland.{" "}
+                around Auckland.
               </p>
               <p className="normal-paragraph">
-                {" "}
                 The main plan for this website is to be a dumping ground for any
                 projects I feel confident in sharing with you :)
               </p>

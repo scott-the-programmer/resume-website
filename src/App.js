@@ -5,7 +5,7 @@ import Hero from "./hero/Hero";
 
 function App() {
   return (
-    <div class="cool-bg" role="main">
+    <div className="cool-bg" role="main">
       <header>
         <AppHeader />
       </header>

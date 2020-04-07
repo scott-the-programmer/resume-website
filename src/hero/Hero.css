@@ -14,8 +14,9 @@
 .normal-paragraph {
     text-align: left;    
     width: 80%;
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    margin:auto;
+    margin-top:1vh;
 }
 
 .me-img {
@@ -61,7 +62,6 @@
         text-align: left;    
         font-family: 'Roboto', sans-serif;
         width: 100%;
-        margin: 0;
     }
 }
 
