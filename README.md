@@ -1,20 +1,58 @@
-# Scott's Website
+# scott-the-programmer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+![Continuous Deployment](https://github.com/scott-the-programmer/scott-the-programmer.github.io/workflows/continuous-deployment/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7a79085c05a7ce7ea5e3/maintainability)](https://codeclimate.com/github/scott-the-programmer/scott-the-programmer.github.io/maintainability)
+
+This project contains the source files for [scott-the-programmer.com](https://scott-the-programmer.com)
+
+Currently, this is written in [React](https://reactjs.org/)
 
 ## Prerequisites
 
-* [npm v6 or higher](https://www.npmjs.com/get-npm)
-* [node v12 or higher](https://nodejs.org/en/download/)
+* [Node 13.12.0+](https://nodejs.org/en/download/)
+* [Npm 6.14.4+](https://www.npmjs.com/get-npm)
 
-## Install dependencies
+## Getting started
 
-Run `npm install` in your terminal to download all the package dependencies
+### Install dependencies
 
-## Running locally
+Run the following command to install the required dependencies
 
-Run `ng serve` or `ng serve --host 0.0.0.0` (if you want to access this on your local network)
+```bash
+npm install
+```
 
-## Build
+### Run website locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run the following to serve the content locally
+
+```bash
+npm run start
+```
+
+The website will be run on [localhost:3000](localhost:3000)
+
+### Run tests
+
+Tests are localled under [./src/\_\_tests\_\_](./src/__tests__)
+
+To run all the unit tests, run the following command
+
+```bash
+npm run test
+```
+
+### Run deployment
+
+If you are a contributor of this repository, your git credentials will be allowed to deploy this application to github pages
+
+To deploy the website, run the following command
+
+```bash
+npm run deploy
+```
+
+## Continuous Deployment
+
+This repository is hooked up to [Github Actions](https://github.com/features/actions). Every push to the development branch will trigger a build / test. If those stages are successful, the artefacts
+will be automatically deployed to [https://scott-the-programmer.com](https://scott-the-programmer.com)

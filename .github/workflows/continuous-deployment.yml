@@ -1,0 +1,25 @@
+
+name: continuous-deployment
+
+on:
+  push:
+    branches: [ development ]
+jobs:
+  continous-deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build
+      run: |
+        npm install
+        npm test
+        npm run build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master
+        FOLDER: build
+
